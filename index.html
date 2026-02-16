@@ -18,11 +18,17 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@abmmhasan" />
     <meta name="twitter:image" content="/logo.png" />
-    <script type="module" crossorigin src="/assets/index-C96ZrsL_.js"></script>
+    <script type="module" crossorigin src="/assets/index-M5CrSh8G.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/index-QE5p45ev.css">
   </head>
 
-  <body>
+  <body style="background-color: hsl(220, 20%, 8%); margin: 0;">
+    <script>
+      // Match background to theme before React loads to prevent white flash
+      if (!window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.style.backgroundColor = 'hsl(0, 0%, 100%)';
+      }
+    </script>
     <div id="root"></div>
   </body>
 </html>
